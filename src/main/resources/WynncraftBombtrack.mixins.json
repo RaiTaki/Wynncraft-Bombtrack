@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "wynncraftbombtrack.wynncraftbombtrack.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MessageMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
