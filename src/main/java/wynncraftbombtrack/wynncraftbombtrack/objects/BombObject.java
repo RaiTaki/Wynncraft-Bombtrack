@@ -1,5 +1,12 @@
 package wynncraftbombtrack.wynncraftbombtrack.objects;
 
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.font.TextHandler;
+import net.minecraft.text.MutableText;
+import net.minecraft.text.Style;
+import net.minecraft.text.Text;
+import net.minecraft.text.TextColor;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -37,7 +44,7 @@ public class BombObject {
     }
 
     public String getText(){
-        return type.toString().replace("_", " ") + " bomb on " + server + " - " + getFormattedType();
+        return "§e" + type.toString().replace("_", " ") + " bomb on " + server + " - " + getFormattedType();
     }
 
     public static BOMB_TYPE stringToBombType(String type){
